@@ -9,23 +9,20 @@ class nearby_swell_widgetState extends StatefulWidget {
 }
 
 class _nearby_swell_widgetStateState extends State<nearby_swell_widgetState> {
-  String savedlocation = "Barcelona";
-  String userImage = "waveswell.jpg";
-
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         Text(
-          savedlocation,
-          style: const TextStyle(fontSize: 60),
+          "Hi",
+          style: TextStyle(fontSize: 60),
         ),
-        Image(
-          image: AssetImage(userImage),
-          height: 400,
-          width: 300,
-          fit: BoxFit.cover,
-        )
+        //Image(
+        //image: AssetImage(userImage),
+        //height: 400,
+        //width: 300,
+        //fit: BoxFit.cover,
+        //)
       ],
     );
   }
