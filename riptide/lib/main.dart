@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:riptide/widgets/explore_header.dart';
+import 'package:riptide/widgets/explore_slider.dart';
 import 'package:riptide/widgets/featured_swell.dart';
-import 'package:riptide/widgets/nearby_swells.dart';
+import 'package:riptide/widgets/localswells_index.dart';
 import 'package:riptide/widgets/welcome_widget.dart';
 
 void main() {
@@ -30,8 +31,9 @@ class MyApp extends StatelessWidget {
                 featuredInfo:
                     "Surf the best waves around, relax, and leisure at this weeks top spot",
                 featuredLocation: "Portugal"),
-            nearby_swell_widgetState(),
             explore_spots(),
+            explore_slider(numTags: 3),
+            localswellsindex(),
           ],
         ),
       ),

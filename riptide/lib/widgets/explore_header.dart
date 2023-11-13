@@ -11,7 +11,12 @@ class _explore_spotsState extends State<explore_spots> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("Featured"),
+      alignment: Alignment.topLeft,
+      child: const Text(
+        "Explore Local Surfing Spots",
+        style: TextStyle(
+            color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),
+      ),
     );
   }
 }
