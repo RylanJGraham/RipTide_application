@@ -19,9 +19,6 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Column(
           children: [
-            SizedBox(
-              height: 20,
-            ),
             welcome_widget(
               userName: "Rylan",
               userImg: "images/pfp.jpg",

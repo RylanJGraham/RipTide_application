@@ -14,7 +14,7 @@ class welcome_widget extends StatelessWidget {
         color: Colors.white,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -37,13 +37,16 @@ class welcome_widget extends StatelessWidget {
               )
             ],
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(80),
-            child: Image.asset(
-              "images/pfp.jpg",
-              height: 80.0,
-              width: 80.0,
-              fit: BoxFit.cover,
+          Padding(
+            padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(80),
+              child: Image.asset(
+                "images/pfp.jpg",
+                height: 80.0,
+                width: 80.0,
+                fit: BoxFit.cover,
+              ),
             ),
           )
         ],
