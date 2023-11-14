@@ -23,13 +23,17 @@ class MyApp extends StatelessWidget {
               userName: "Rylan",
               userImg: "images/pfp.jpg",
             ),
-            featured_wave(
-                featuredImg: "images/featuredimage.jpeg",
-                featuredInfo:
-                    "Surf the best waves around, relax, and leisure at this weeks top spot",
-                featuredLocation: "Portugal"),
-            explore_spots(),
             explore_slider(numTags: 3),
+            featured_wave(
+              img: "images/featuredimage.jpeg",
+              location: "PAUL DO MAR MEDEIRA",
+              distance: 2.6,
+              swellHeight: 4,
+              temperature: 26,
+              swellPeriod: 20,
+              windSpeed: 15,
+            ),
+            explore_spots(),
             localswellsindex(),
           ],
         ),

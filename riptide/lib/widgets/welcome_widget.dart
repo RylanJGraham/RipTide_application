@@ -20,25 +20,30 @@ class welcome_widget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+              Text("Great Conditions Today $userName!",
+                  style: const TextStyle(fontSize: 30)),
+              const Row(
                 children: [
-                  Text("Hello $userName", style: const TextStyle(fontSize: 30)),
-                  const Image(
+                  Text(
+                    "Catch a Wave",
+                    style: TextStyle(fontSize: 24),
+                  ),
+                  Image(
                     image: AssetImage("images/surfboard.png"),
                     height: 40,
                     width: 40,
                   ),
+                  Image(
+                    image: AssetImage("images/waveswell.png"),
+                    height: 40,
+                    width: 40,
+                  ),
                 ],
-              ),
-              const Text(
-                "Catch a Wave",
-                style: TextStyle(fontSize: 24),
               )
             ],
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(100, 0, 0, 0),
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(80),
               child: Image.asset(
