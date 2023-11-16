@@ -71,6 +71,8 @@ flutter:
     - images/icons/WaveLogo.png
     - images/icons/TimerLogo.png
     - images/icons/WindLogo.png
+    - images/beaches/beach2.jpg
+    - images/beaches/beach3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
