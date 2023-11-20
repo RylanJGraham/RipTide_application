@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/widgets/featured_swell.dart';
+import 'package:riptide/widgets/HomeScreen/swell_home_widget.dart';
 
 class ContainerGrid extends StatefulWidget {
   @override

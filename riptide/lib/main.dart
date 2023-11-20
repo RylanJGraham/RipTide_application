@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/widgets/bottomBar_Widget.dart';
-import 'package:riptide/widgets/explore_header.dart';
-import 'package:riptide/widgets/featured_scroll_widget.dart';
-import 'package:riptide/widgets/home_screen.dart';
-import 'package:riptide/widgets/info_screen.dart';
+import 'package:riptide/widgets/HomeScreen/bottomBar_Widget.dart';
+import 'package:riptide/widgets/HomeScreen/explore_header.dart';
+import 'package:riptide/widgets/HomeScreen/swell_scroll_widget.dart';
+import 'package:riptide/widgets/HomeScreen/home_screen.dart';
+import 'package:riptide/widgets/LoginScreens/login_page.dart';
+import 'package:riptide/widgets/LoginScreens/register_page.dart';
+import 'package:riptide/widgets/ProfileScreens/profile_screen.dart';
 import 'package:riptide/widgets/welcome_widget.dart';
 
 void main() {
@@ -17,10 +19,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
+        "/login": (context) => LoginWidget(),
         "/home": (context) => HomeScreen(),
-        "/infoScreen": (context) => InfoScreen(),
+        '/register': (context) => RegisterPage(),
+        '/profile': (context) => ProfilePage(),
+        //"/infoScreen": (context) => InfoScreen(),
       },
-      home: HomeScreen(),
+      home: LoginWidget(),
     );
   }
 }

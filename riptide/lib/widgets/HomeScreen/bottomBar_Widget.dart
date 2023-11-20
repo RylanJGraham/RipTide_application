@@ -93,6 +93,7 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
             ),
             iconSize: 40,
             onPressed: () {
+              Navigator.pushNamed(context, "/profile");
               profile_active = !profile_active;
               home_active = false;
               favorites_active = false;

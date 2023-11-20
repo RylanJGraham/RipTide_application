@@ -1,34 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:riptide/widgets/custom_data.dart';
 
-class InfoImageWidget extends StatefulWidget {
-  const InfoImageWidget(
+class featured_wave extends StatefulWidget {
+  const featured_wave(
       {super.key,
-      required this.Image1,
-      required this.Image2,
-      required this.Image3});
+      required this.img,
+      required this.swellHeight,
+      required this.swellPeriod,
+      required this.location,
+      required this.windSpeed,
+      required this.distance,
+      required this.temperature,
+      required this.containernumber});
 
-  final String Image1;
-  final String Image2;
-  final String Image3;
+  final String img;
+  final double swellHeight;
+  final double swellPeriod;
+  final double windSpeed;
+  final double temperature;
+  final double distance;
+  final String location;
+  final int containernumber;
 
   @override
-  State<InfoImageWidget> createState() => _InfoImageWidgetState();
+  State<featured_wave> createState() => _featured_waveState();
 }
 
-class _InfoImageWidgetState extends State<InfoImageWidget> {
+class _featured_waveState extends State<featured_wave> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: MediaQuery.of(context).size.width - 60,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(widget.Image1),
-            fit: BoxFit.cover,
-          ),
-          borderRadius: BorderRadius.circular(25),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+        child: GestureDetector(
+          onTap: () {
+            //Navigator.pushNamed(context, "/infoScreen");
+          },
+          child: Container(
+              width: MediaQuery.of(context).size.width - 60,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(widget.img),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(25),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     children: [
@@ -182,6 +200,8 @@ class _InfoImageWidgetState extends State<InfoImageWidget> {
                   )
                 ],
               )),
-        ));
+        ),
+      ),
+    );
   }
 }

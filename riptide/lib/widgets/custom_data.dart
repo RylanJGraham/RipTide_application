@@ -1,5 +1,7 @@
 class CustomData {
   final String img;
+  final String img2;
+  final String img3;
   final double swellHeight;
   final double swellPeriod;
   final double windSpeed;
@@ -10,6 +12,8 @@ class CustomData {
 
   CustomData({
     required this.img,
+    required this.img2,
+    required this.img3,
     required this.swellHeight,
     required this.swellPeriod,
     required this.location,

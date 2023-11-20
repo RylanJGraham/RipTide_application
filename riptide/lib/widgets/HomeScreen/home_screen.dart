@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/widgets/bottomBar_Widget.dart';
-import 'package:riptide/widgets/explore_header.dart';
-import 'package:riptide/widgets/featured_scroll_widget.dart';
+import 'package:riptide/widgets/HomeScreen/bottomBar_Widget.dart';
+import 'package:riptide/widgets/HomeScreen/explore_header.dart';
+import 'package:riptide/widgets/HomeScreen/swell_scroll_widget.dart';
 import 'package:riptide/widgets/welcome_widget.dart';
 
 class HomeScreen extends StatefulWidget {
