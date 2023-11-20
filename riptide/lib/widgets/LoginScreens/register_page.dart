@@ -13,7 +13,7 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          new ConstrainedBox(
+          ConstrainedBox(
               constraints: const BoxConstraints.expand(),
               child: Container(
                 width: MediaQuery.of(context).size.width,
@@ -55,7 +55,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           decoration: const InputDecoration(
                             labelText: 'Username',
                             border: OutlineInputBorder(),
-                            fillColor: Color.fromARGB(118, 233, 197, 142),
+                            fillColor: Color.fromARGB(20, 30, 181, 221),
                             hoverColor: Colors.black,
                             filled: true,
                           ),
@@ -66,7 +66,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           decoration: const InputDecoration(
                             labelText: 'Email',
                             border: OutlineInputBorder(),
-                            fillColor: Color.fromARGB(118, 233, 197, 142),
+                            fillColor: Color.fromARGB(20, 30, 181, 221),
                             hoverColor: Colors.black,
                             filled: true,
                           ),
@@ -77,7 +77,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           decoration: const InputDecoration(
                             labelText: 'Password',
                             border: OutlineInputBorder(),
-                            fillColor: Color.fromARGB(118, 231, 137, 70),
+                            fillColor: Color.fromARGB(20, 30, 181, 221),
                             hoverColor: Colors.black,
                             filled: true,
                           ),
@@ -88,7 +88,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           decoration: const InputDecoration(
                             labelText: 'Location',
                             border: OutlineInputBorder(),
-                            fillColor: Color.fromARGB(118, 231, 137, 70),
+                            fillColor: Color.fromARGB(20, 30, 181, 221),
                             hoverColor: Colors.black,
                             filled: true,
                           ),
