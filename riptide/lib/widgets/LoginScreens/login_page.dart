@@ -15,7 +15,7 @@ class _LoginWidgetState extends State<LoginWidget> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          new ConstrainedBox(
+          ConstrainedBox(
               constraints: const BoxConstraints.expand(),
               child: Container(
                 width: MediaQuery.of(context).size.width,
