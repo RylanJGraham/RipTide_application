@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 
 class BottomBarWidget extends StatefulWidget {
-  const BottomBarWidget({super.key});
+  BottomBarWidget(
+      {super.key,
+      required this.favorites_active,
+      required this.home_active,
+      required this.profile_active,
+      required this.search_active});
+
+  bool home_active;
+  bool favorites_active;
+  bool search_active;
+  bool profile_active;
 
   @override
   State<BottomBarWidget> createState() => _BottomBarWidgetState();
 }
 
 class _BottomBarWidgetState extends State<BottomBarWidget> {
-  bool home_active = true;
-  bool favorites_active = false;
-  bool search_active = false;
-  bool profile_active = false;
-
   Icon Favorite1 = const Icon(
     Icons.favorite_border_outlined,
     color: Colors.grey,
@@ -48,40 +53,41 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
           IconButton(
             icon: Icon(
               Icons.home,
-              color: home_active
+              color: widget.home_active
                   ? Color.fromARGB(255, 0, 204, 153)
                   : Color.fromARGB(255, 104, 104, 104),
             ),
             iconSize: 40,
             onPressed: () {
+              Navigator.pushNamed(context, "/home");
               setState(() {
-                home_active = !home_active;
-                favorites_active = false;
-                search_active = false;
-                profile_active = false;
+                widget.home_active = !widget.home_active;
+                widget.favorites_active = false;
+                widget.search_active = false;
+                widget.profile_active = false;
               });
             },
           ),
           IconButton(
-            icon: favorites_active ? Favorite2 : Favorite1,
+            icon: widget.favorites_active ? Favorite2 : Favorite1,
             onPressed: () {
               setState(() {
-                favorites_active = !favorites_active;
-                home_active = false;
-                search_active = false;
-                profile_active = false;
+                widget.favorites_active = !widget.favorites_active;
+                widget.home_active = false;
+                widget.search_active = false;
+                widget.profile_active = false;
               });
               // Add your logic here
             },
           ),
           IconButton(
-            icon: search_active ? Search2 : Search1,
+            icon: widget.search_active ? Search2 : Search1,
             onPressed: () {
               setState(() {
-                search_active = !search_active;
-                home_active = false;
-                favorites_active = false;
-                profile_active = false;
+                widget.search_active = !widget.search_active;
+                widget.home_active = false;
+                widget.favorites_active = false;
+                widget.profile_active = false;
               });
               // Add your logic here
             },
@@ -94,10 +100,10 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
             iconSize: 40,
             onPressed: () {
               Navigator.pushNamed(context, "/profile");
-              profile_active = !profile_active;
-              home_active = false;
-              favorites_active = false;
-              search_active = false;
+              widget.profile_active = !widget.profile_active;
+              widget.home_active = false;
+              widget.favorites_active = false;
+              widget.search_active = false;
             },
           ),
         ],

@@ -26,7 +26,11 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(child: ContainerGrid()),
         ],
       ),
-      bottomNavigationBar: const BottomBarWidget(),
+      bottomNavigationBar: BottomBarWidget(
+          favorites_active: false,
+          home_active: true,
+          profile_active: false,
+          search_active: false),
     );
   }
 }
