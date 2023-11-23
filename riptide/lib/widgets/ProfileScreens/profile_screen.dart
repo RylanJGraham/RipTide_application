@@ -9,6 +9,9 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  final ScrollController _scrollController = ScrollController();
+  final double itemWidth = 200.0; // Adjust as needed
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,76 +26,87 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Padding(
           padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    IconButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      icon: const Icon(Icons.arrow_back_ios_rounded,
-                          color: Colors.white),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "Profile",
-                      style: TextStyle(fontSize: 20, color: Colors.white),
-                    )
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(Icons.arrow_back_ios_rounded,
+                            color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "Profile",
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20), // Adjust spacing as needed
+                const CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('images/pfp.jpg'),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Rylan Graham',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                const Text(
+                  '@rylanjgraham',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    _buildStatColumn('Followers', '10K'),
+                    _buildStatColumn('Following', '100'),
+                    _buildStatColumn('Surfed', '10'),
                   ],
                 ),
-              ),
-              SizedBox(height: 20), // Adjust spacing as needed
-              const CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage('images/pfp.jpg'),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'Rylan Graham',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                const SizedBox(
+                  height: 40,
                 ),
-              ),
-              const Text(
-                '@rylanjgraham',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white,
+                const Text(
+                  "Favorite Spots",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                 ),
-              ),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  _buildStatColumn('Followers', '10K'),
-                  _buildStatColumn('Following', '100'),
-                  _buildStatColumn('Surfed', '10'),
-                ],
-              ),
-              const SizedBox(
-                height: 40,
-              ),
-              const Text(
-                "Favorite Spots",
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
-              const Favorite_Minimal(
-                img: "images/beaches/beach3.jpg",
-                location: "PRAIA DA NAZARE",
-              )
-            ],
-          ),
+                const SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Favorite_Minimal(
+                          img: "images/beaches/beach2.jpg",
+                          location: "Barcelona"),
+                      Favorite_Minimal(
+                          img: "images/beaches/beach2.jpg",
+                          location: "Barcelona"),
+                      Favorite_Minimal(
+                          img: "images/beaches/beach2.jpg",
+                          location: "Barcelona"),
+                    ],
+                  ),
+                )
+              ]),
         ),
       ),
     );
