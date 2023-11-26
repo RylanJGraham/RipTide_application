@@ -26,10 +26,11 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         "/home": (context) => const HomeScreen(),
+        //Login & Profile Screens
         //"/login": (context) => SignInSignUpPage(), //--Login/SignUp
         //'/profile': (context) => const ProfilePage(), //--Profile View(Progress)
       },
-      home: HomeScreen(), //SignInSignUpPage(), //--StartUp Login
+      home: const HomeScreen(), //SignInSignUpPage(), //--StartUp Login
     );
   }
 }
