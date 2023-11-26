@@ -15,4 +15,8 @@ Display uses data from lib/data/beaches_data.dart
 To View Login/Profile Pages uncomment route lines in the main.dart and their include directories. This gives access to the widgets contained in the lib/Screens/AdditionalScreens folder. Also make sure the main.dart home function is set to the commented signinsignuppage() rather than the homescreen(). Also uncomment the navigator line in lib/Screens/Task1_ScreenDesign/Widgets/bottomAppBar_Widget.dart. 
 
 
+## Warnings
+Warnings (24) are due to snake_case or camel_case identifiers. No data leaks or issues with the display detected. 
+
+
 

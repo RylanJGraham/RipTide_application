@@ -59,7 +59,7 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
     return BottomAppBar(
       color: Colors.white,
       padding: const EdgeInsets.all(10),
-      shadowColor: Color.fromARGB(0, 255, 255, 255),
+      shadowColor: const Color.fromARGB(0, 255, 255, 255),
       shape: const CircularNotchedRectangle(),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -68,8 +68,8 @@ class _BottomBarWidgetState extends State<BottomBarWidget> {
             icon: Icon(
               Icons.home_outlined,
               color: widget.home_active
-                  ? Color.fromARGB(255, 23, 113, 142)
-                  : Color.fromARGB(255, 104, 104, 104),
+                  ? const Color.fromARGB(255, 23, 113, 142)
+                  : const Color.fromARGB(255, 104, 104, 104),
             ),
             iconSize: 40,
             onPressed: () {

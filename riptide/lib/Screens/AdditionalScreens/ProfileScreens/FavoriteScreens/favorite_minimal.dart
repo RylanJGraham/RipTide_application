@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Favorite_Minimal extends StatefulWidget {
   const Favorite_Minimal({
     super.key,
@@ -14,6 +15,7 @@ class Favorite_Minimal extends StatefulWidget {
   State<Favorite_Minimal> createState() => _Favorite_MinimalState();
 }
 
+// ignore: camel_case_types
 class _Favorite_MinimalState extends State<Favorite_Minimal> {
   @override
   Widget build(BuildContext context) {

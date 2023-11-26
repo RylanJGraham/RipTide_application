@@ -3,7 +3,10 @@ import 'package:riptide/Screens/AdditionalScreens/LoginScreens/Widgets/login_wid
 import 'package:riptide/Screens/AdditionalScreens/LoginScreens/Widgets/register_widget.dart';
 
 class SignInSignUpPage extends StatefulWidget {
+  const SignInSignUpPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _SignInSignUpPageState createState() => _SignInSignUpPageState();
 }
 
@@ -26,12 +29,12 @@ class _SignInSignUpPageState extends State<SignInSignUpPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF14181B),
+        backgroundColor: const Color(0xFF14181B),
         body: Container(
             width: MediaQuery.sizeOf(context).width,
             height: MediaQuery.sizeOf(context).height * 1,
             decoration: BoxDecoration(
-              color: Color.fromARGB(78, 20, 24, 27),
+              color: const Color.fromARGB(78, 20, 24, 27),
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(

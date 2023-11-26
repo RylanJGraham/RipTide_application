@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
         },
       ),
       routes: {
+        //Task 1 Screen
         "/home": (context) => const HomeScreen(),
         //Login & Profile Screens
         //"/login": (context) => SignInSignUpPage(), //--Login/SignUp

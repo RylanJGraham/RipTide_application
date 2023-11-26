@@ -3,6 +3,8 @@ import 'package:riptide/data/beaches_data.dart';
 import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/featuredwave_display.dart';
 
 class RecommendedViewer extends StatefulWidget {
+  const RecommendedViewer({super.key});
+
   @override
   _RecommendedViewerState createState() => _RecommendedViewerState();
 }
@@ -21,6 +23,8 @@ class _RecommendedViewerState extends State<RecommendedViewer> {
 }
 
 class NearbyViewer extends StatefulWidget {
+  const NearbyViewer({super.key});
+
   @override
   _NearbyViewerState createState() => _NearbyViewerState();
 }

@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class LoginWidget extends StatefulWidget {
@@ -48,14 +46,15 @@ class _LoginWidgetState extends State<LoginWidget> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   shadowColor: Colors.black,
-                  backgroundColor: Color.fromARGB(255, 231, 137, 70),
-                  textStyle: TextStyle(color: Colors.black, fontSize: 18)),
+                  backgroundColor: const Color.fromARGB(255, 231, 137, 70),
+                  textStyle:
+                      const TextStyle(color: Colors.black, fontSize: 18)),
               onPressed: () {
                 Navigator.pushNamed(context, "/home");
               },
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
           ],
         ),
       ),

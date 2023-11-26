@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riptide/data/beaches_data.dart';
 
+// ignore: camel_case_types
 class featured_wave extends StatefulWidget {
   const featured_wave({Key? key, required this.beach}) : super(key: key);
   final Beach beach;
@@ -115,11 +116,13 @@ class _featured_waveState extends State<featured_wave> {
                                       "images/AppImages/icons/WaveLogo.png",
                                       height: 30.0,
                                       width: 30.0,
-                                      color: widget.beach.swellHeight -
-                                                  (i * 5) >=
-                                              5
-                                          ? Color.fromARGB(255, 255, 255, 255)
-                                          : Color.fromARGB(255, 87, 87, 87),
+                                      color:
+                                          widget.beach.swellHeight - (i * 5) >=
+                                                  5
+                                              ? const Color.fromARGB(
+                                                  255, 255, 255, 255)
+                                              : const Color.fromARGB(
+                                                  255, 87, 87, 87),
                                       fit: BoxFit.cover,
                                     ),
                                   ),

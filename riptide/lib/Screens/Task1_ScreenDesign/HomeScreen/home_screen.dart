@@ -15,9 +15,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
+      body: const Column(
         children: [
-          const welcome_widget(
+          welcome_widget(
             userName: "Rylan",
           ),
           ExploreWidget(),

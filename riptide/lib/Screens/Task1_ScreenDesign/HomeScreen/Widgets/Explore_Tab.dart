@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/featuredwave_viewer.dart';
 
 class ExploreWidget extends StatefulWidget {
+  const ExploreWidget({super.key});
+
   @override
   _ExploreWidget createState() => _ExploreWidget();
 }

@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class RegisterWidget extends StatefulWidget {
@@ -75,7 +73,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shadowColor: Colors.black,
-                  backgroundColor: Color.fromARGB(255, 37, 135, 216),
+                  backgroundColor: const Color.fromARGB(255, 37, 135, 216),
                   textStyle: const TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 onPressed: () {

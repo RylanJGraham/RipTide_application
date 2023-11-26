@@ -23,12 +23,12 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
+          padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -39,23 +39,23 @@ class _ProfilePageState extends State<ProfilePage> {
                         icon: const Icon(Icons.arrow_back_ios_rounded,
                             color: Colors.white),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
-                      Text(
+                      const Text(
                         "Profile",
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       )
                     ],
                   ),
                 ),
-                SizedBox(height: 20), // Adjust spacing as needed
+                const SizedBox(height: 20), // Adjust spacing as needed
                 const CircleAvatar(
                   radius: 50,
                   backgroundImage: AssetImage('images/AppImages/pfp.jpg'),
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                   'Rylan Graham',
                   style: TextStyle(
                     fontSize: 24,
@@ -70,7 +70,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
@@ -116,14 +116,14 @@ class _ProfilePageState extends State<ProfilePage> {
       children: <Widget>[
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 18,
             color: Colors.white,
           ),
         ),
         Text(
           value,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.bold,
             color: Colors.white,
