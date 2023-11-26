@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/Screens/ProfileScreens/FavoriteScreens/favorite_minimal.dart';
+import 'package:riptide/Screens/AdditionalScreens/ProfileScreens/FavoriteScreens/favorite_minimal.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

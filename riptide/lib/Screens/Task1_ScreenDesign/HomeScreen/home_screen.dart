@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/Screens/HomeScreen/Widgets/Explore_Tab.dart';
-import 'package:riptide/Screens/HomeScreen/Widgets/bottomAppBar_Widget.dart';
-import 'package:riptide/Screens/HomeScreen/Widgets/header_widget.dart';
+import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/Explore_Tab.dart';
+import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/bottomAppBar_Widget.dart';
+import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/header_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

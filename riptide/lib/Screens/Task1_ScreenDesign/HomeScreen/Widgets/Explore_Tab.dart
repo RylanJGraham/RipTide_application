@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/Screens/HomeScreen/Widgets/featuredwave_viewer.dart';
+import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/featuredwave_viewer.dart';
 
 class ExploreWidget extends StatefulWidget {
   @override

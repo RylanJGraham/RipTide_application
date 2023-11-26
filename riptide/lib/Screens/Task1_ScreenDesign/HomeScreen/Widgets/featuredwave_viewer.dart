@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riptide/data/beaches_data.dart';
-import 'package:riptide/Screens/HomeScreen/Widgets/featuredwave_display.dart';
+import 'package:riptide/Screens/Task1_ScreenDesign/HomeScreen/Widgets/featuredwave_display.dart';
 
 class RecommendedViewer extends StatefulWidget {
   @override

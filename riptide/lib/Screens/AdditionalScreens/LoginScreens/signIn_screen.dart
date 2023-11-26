@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:riptide/Screens/LoginScreens/Widgets/login_widget.dart';
-import 'package:riptide/Screens/LoginScreens/Widgets/register_widget.dart';
+import 'package:riptide/Screens/AdditionalScreens/LoginScreens/Widgets/login_widget.dart';
+import 'package:riptide/Screens/AdditionalScreens/LoginScreens/Widgets/register_widget.dart';
 
 class SignInSignUpPage extends StatefulWidget {
   @override
